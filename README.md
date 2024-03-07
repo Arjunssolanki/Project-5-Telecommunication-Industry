@@ -1,0 +1,2 @@
+# User Analytics in the Telecommunication Industry
+provide a report to analyze opportunities for growth and make a recommendation on whether TellCo is worth buying or selling by analyzing a telecommunication dataset that contains useful information about the customers & their activities on the network.
