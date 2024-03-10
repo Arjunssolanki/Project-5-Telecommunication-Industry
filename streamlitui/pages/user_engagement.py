@@ -25,7 +25,7 @@ Users are represented by *msisdn number* which is a unique customer number
 
 st.markdown("# ")
 
-data = load_data(f"{cwd}/data/engagement_data.pkl")
+data = load_data(f"{cwd}/picklefile/engagement_data.pkl")
 
 st.markdown("### Top ten customers with highest dl/ul traffic ")
 st.table(data['top_ten_per_traffic'])
