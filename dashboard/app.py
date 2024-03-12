@@ -23,7 +23,7 @@ st.image("logo.png")
 st.title(" User Analytics in the Telecommunication Industry")
 st.markdown("Analyze opportunities for growth and make a recommendation on whether TellCo is worth buying or selling")
 
-tab1,tab2,tab3,tab4,tab5 = st.tabs([":clipboard: Data",":chart: User Overview Analysis",":bar_chart: User Engagement analysis",":chart: User Experience analysis",":chart: User Satisfaction Analysis"])
+tab1,tab2,tab3,tab4,tab5,tab6 = st.tabs([":clipboard: Data",":chart: User Overview Analysis",":chart: User Engagement analysis",":chart: User Experience analysis",":chart: User Satisfaction Analysis",":black_nib: Recommendation"])
 ov_data = load_data(f"{cwd}\..\Project Notebook\clean.csv")
 ov_data = ov_data.drop("Unnamed: 0",axis=1)
 
@@ -396,3 +396,10 @@ with tab5:
     st.pyplot()
     csv19 = satisfaction_data.to_csv(index=False).encode('utf-8')
     st.download_button("Download csv file", data = csv19, file_name = "satisfaction_data.csv")
+    
+with tab6:
+    st.title("Recommendations")
+    st.markdown(" >  Engagement and satisfaction is the high growth area, company must invest in this two area to achieve maximum potential ")
+    st.markdown(" >  Customer experience and customer satisfaction is the most important factor for the growth of the organization. Company must invest in the news methods  to improve the customer experience so that the satisfaction level can be improved ")
+    st.markdown(" >  Most of the data is consumed in the gaming application, so company must invest in the gaming sector which can improve the experience of the customers")
+    st.markdown(" >  Since there is a positive trend in engagement and satisfaction , there is a very strong growth potential, so there is a compelling investment opportunity")
